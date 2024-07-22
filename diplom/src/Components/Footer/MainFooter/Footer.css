@@ -1,0 +1,58 @@
+.footer {
+  background-color: #029491;
+  height: 137px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer__info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.tel {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.mail {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.year {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .footer {
+    background-color: #029491;
+    height: 137px;
+    padding: 25px 19px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .footerImg {
+    width: 111px;
+    height: 111px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .footer {
+    background-color: #029491;
+    height: 137px;
+    padding: 25px 19px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .footerImg {
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+  font-family: 'Ferry';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local('Ferry'),
+    url('../../../public/Ferry-Black.woff') format('woff');
+}
+
+.searchContainer {
+  display: grid;
+  grid-template-columns: 925px 475px;
+  margin-bottom: 64px;
+}
+.searchTitle {
+  margin: 0 0 0 60px;
+}
+
+.searchTitle h1 {
+  font-family: 'Ferry';
+  font-weight: 900;
+  font-size: 40px;
+}
+.searchTitle p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 47px;
+}
+
+.SearchMan {
+  margin-top: 130px;
+  margin-left: 80px;
+}
+
+.Folders {
+  margin-left: 166px;
+}
+
+.searchForm {
+  display: grid;
+  grid-template-columns: 416px 445px;
+  min-height: 543px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #00000033;
+}
+
+.error1 {
+  color: red;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.formInput {
+  width: 65%;
+  min-height: 43px;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.formInputError1 {
+  width: 65%;
+  min-height: 43px;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border-color: red;
+}
+.formInputError2 {
+  width: 65%;
+  min-height: 43px;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border-color: red;
+}
+
+.formList {
+  width: 65%;
+  min-height: 43px;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: start;
+  padding: 0 20px;
+}
+
+.startForm {
+  display: flex;
+  flex-direction: column;
+  padding: 21px 0 75px 44px;
+}
+
+.startForm h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.twoInput {
+  display: flex;
+}
+
+.startDate {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.inputDate {
+  min-height: 43px;
+  width: 176px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.endForm {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 39px 0 0;
+}
+
+.endForm label {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  display: block;
+}
+.endForm input {
+  cursor: pointer;
+  min-width: 20px;
+  min-height: 20px;
+  margin-bottom: 15px;
+  border-radius: 0px;
+  margin-right: 17px;
+}
+
+.endForm button {
+  background-color: #5970ff;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  border-radius: 5px;
+  border: none;
+  width: 305px;
+  min-height: 59px;
+  margin: 145px 0 10px 112px;
+  cursor: pointer;
+}
+.endForm p {
+  color: grey;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 112px;
+}
+.disabledButton {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .error1 {
+    color: red;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 80px;
+    margin-top: 5px;
+  }
+  .searchContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchTitle {
+    margin: 0 0 0 0;
+  }
+
+  .searchTitle h1 {
+    font-family: 'Ferry';
+    font-weight: 900;
+    font-size: 28px;
+    width: 320px;
+    position: relative;
+  }
+
+  .searchTitle h1::after {
+    content: url('../../../public/Document.svg');
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: -50px;
+  }
+
+  .searchTitle p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 47px;
+    width: 300px;
+  }
+
+  .searchForm {
+    display: flex;
+    flex-direction: column;
+    min-height: 543px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #00000033;
+  }
+
+  .labelList {
+    display: none;
+  }
+
+  .startForm {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 14px;
+    width: 100%;
+  }
+
+  .formInput {
+    width: 93%;
+    min-height: 43px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .formInputError1 {
+    width: 93%;
+    min-height: 43px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border-color: red;
+  }
+
+  .formInputError2 {
+    width: 93%;
+    min-height: 43px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border-color: red;
+  }
+
+  .formList {
+    width: 93%;
+    min-height: 43px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: start;
+    padding: 0 20px;
+  }
+
+  .twoInput {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .startDate {
+    margin-bottom: 20px;
+  }
+
+  .inputDate {
+    min-height: 43px;
+    width: 93%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .endForm {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .endForm button {
+    background-color: #5970ff;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 5px;
+    border: none;
+    width: 93%;
+    min-height: 59px;
+    margin: 40px 0 10px 14px;
+  }
+
+  .endForm p {
+    color: grey;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 14px;
+  }
+
+  .document {
+    display: none;
+  }
+
+  .Folders {
+    display: none;
+  }
+
+  .SearchMan {
+    width: 380px;
+    height: 400px;
+    margin-left: 36px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .error1 {
+    color: red;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 80px;
+    margin-top: 5px;
+  }
+  .searchContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchTitle {
+    margin: 0 0 0 0;
+  }
+
+  .searchTitle h1 {
+    font-family: 'Ferry';
+    font-weight: 900;
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .searchTitle p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 47px;
+    width: 100%;
+  }
+
+  .searchForm {
+    display: flex;
+    flex-direction: column;
+    min-height: 543px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #00000033;
+  }
+
+  .labelList {
+    display: none;
+  }
+
+  .startForm {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 14px;
+  }
+
+  .formInput {
+    width: 93%;
+    min-height: 43px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .formInputError1 {
+    width: 93%;
+    min-height: 43px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border-color: red;
+  }
+
+  .formInputError2 {
+    width: 93%;
+    min-height: 43px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border-color: red;
+  }
+
+  .formList {
+    width: 93%;
+    min-height: 43px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: start;
+    padding: 0 20px;
+  }
+
+  .twoInput {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .startDate {
+    margin-bottom: 20px;
+  }
+
+  .inputDate {
+    min-height: 43px;
+    width: 93%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .endForm {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .endForm button {
+    background-color: #5970ff;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 5px;
+    border: none;
+    width: 93%;
+    min-height: 59px;
+    margin: 40px 0 10px 14px;
+  }
+
+  .endForm p {
+    color: grey;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 14px;
+  }
+
+  .document {
+    display: none;
+  }
+
+  .Folders {
+    display: none;
+  }
+
+  .SearchMan {
+    width: 380px;
+    height: 400px;
+    margin-left: 80px;
+  }
+}

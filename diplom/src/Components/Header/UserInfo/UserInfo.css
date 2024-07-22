@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+  font-family: 'Ferry';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local('Ferry'),
+    url('../../../../public/Ferry-Black.woff') format('woff');
+}
+
+.header {
+  min-height: 93px;
+  padding: 0 0 0 60px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userInfo {
+  display: flex;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  width: 175px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 10px;
+  padding: 14px 8px 18px 10px;
+}
+
+.userInfo p:nth-child(1) {
+  margin-bottom: 1px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 10px;
+  color: grey;
+}
+
+.userInfo p:nth-child(2) {
+  margin-bottom: 1px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 10px;
+  color: grey;
+}
+
+.userNumber {
+  margin-left: 9px;
+}
+
+.userNumber p:nth-child(1) {
+  margin-left: 9px;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.userNumber p:nth-child(2) {
+  margin-left: 9px;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 14px;
+  color: #8ac540;
+  margin-top: 2px;
+}
+
+.headerNav a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.logo {
+  margin-right: 400px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user p:nth-child(1) {
+  color: grey;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.user p:nth-child(2) {
+  color: grey;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 10px;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .user {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 26px 0 14px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .userInfo {
+    max-width: 135px;
+    display: flex;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .user {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .userInfo {
+    max-width: 135px;
+    display: flex;
+  }
+}

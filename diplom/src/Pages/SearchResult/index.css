@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+  font-family: 'Ferry';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local('Ferry'),
+    url('../../../public/Ferry-Black.woff') format('woff');
+}
+
+.title1 h1 {
+  font-family: 'Ferry', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 36px;
+}
+.title1 p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 127px;
+}
+.title1 {
+  display: flex;
+  /* align-items: center;  */
+  justify-content: space-between;
+}
+
+.title1 {
+  padding: 0 104px 0 60px;
+}
+
+.underTitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #949494;
+}
+
+h3 {
+  font-family: 'Ferry', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  margin-left: 60px;
+}
+
+.bottomButton {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5970ff;
+  padding: 16px 50px;
+  margin-bottom: 109px;
+  margin-top: 38px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .title1 {
+    padding: 0 0 0 14px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title1 img {
+    width: 93%;
+  }
+
+  .title1 p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 21px;
+  }
+
+  .title1 h1 {
+    font-family: 'Ferry', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 21px;
+  }
+
+  h3 {
+    font-family: 'Ferry', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    margin-left: 14px;
+  }
+
+  .bottomButton {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5970ff;
+    padding: 16px 50px;
+    margin-bottom: 57px;
+    margin-top: 35px;
+    position: relative;
+    left: 47%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    margin-left: 14px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .title1 {
+    padding: 0 0 0 14px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title1 img {
+    width: 93%;
+    margin-left: 60px;
+  }
+
+  .title1 p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .title1 h1 {
+    font-family: 'Ferry', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  h3 {
+    font-family: 'Ferry', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    margin-left: 14px;
+  }
+
+  .bottomButton {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5970ff;
+    padding: 16px 50px;
+    margin-bottom: 57px;
+    margin-top: 35px;
+    position: relative;
+    left: 47%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    margin-left: 14px;
+  }
+}

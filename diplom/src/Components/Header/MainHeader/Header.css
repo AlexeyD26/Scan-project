@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+  font-family: 'Ferry';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local('Ferry'),
+    url('../../../../public/Ferry-Black.woff') format('woff');
+}
+
+.header {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 93px;
+}
+
+.header__img {
+  cursor: pointer;
+  margin-right: 200px;
+}
+
+.header__ul a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14;
+}
+
+.header__ul {
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.header__entrance {
+  display: flex;
+  margin-top: 6px;
+}
+
+.header__entrance span {
+  color: grey;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.line {
+  height: 30px;
+  border-left: 3px solid #32a1ce;
+  margin: 20px 30px 0;
+}
+.header__button {
+  height: 26px;
+  width: 65px;
+  background-color: #7ce3e1;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header__ul {
+    display: none;
+  }
+
+  .header__entrance {
+    display: none;
+  }
+  #nav-btn {
+    border-bottom: 17px double #029491;
+    border-top: 6px solid #029491;
+    content: '';
+    height: 5px;
+    width: 32px;
+    cursor: pointer;
+  }
+  .header__img {
+    width: 111px;
+    height: 111px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .header__ul {
+    display: none;
+  }
+
+  .header__entrance {
+    display: none;
+  }
+  #nav-btn {
+    border-bottom: 17px double #029491;
+    border-top: 6px solid #029491;
+    content: '';
+    height: 5px;
+    width: 32px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .header__img {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+  }
+}

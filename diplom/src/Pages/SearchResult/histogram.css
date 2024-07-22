@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+  font-family: 'Ferry';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local('Ferry'),
+    url('../../../public/Ferry-Black.woff') format('woff');
+}
+
+.summary h2 {
+  font-family: 'Ferry', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+.summary {
+  padding: 0 43px 0 51px;
+}
+
+.summaryContainer {
+  min-height: 158px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 107px;
+}
+
+.summaryInfo {
+  display: grid;
+  grid-template-columns: repeat(9, 140px);
+  border: 2px solid #029491;
+  border-radius: 10px;
+}
+
+.summaryInfoTitle {
+  background-color: #029491;
+  color: white;
+  text-align: center;
+  border-radius: 7px 0 0 7px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 25px;
+  height: 163px;
+}
+.summaryInfoBlock {
+  text-align: center;
+}
+.summaryInfoBlock p {
+  margin-bottom: 23px;
+  margin-right: 30px;
+}
+
+.swiper-histogram > .swiper-wrapper {
+  z-index: 1;
+  transition-property: transform;
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+  margin: 0;
+}
+
+.swiper-histogram > .swiper-wrapper > .swiper-slide {
+  flex-shrink: 0;
+  position: relative;
+  transition-property: transform;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #949494;
+}
+
+.swiper-histogram {
+  display: grid;
+  grid-template-columns: repeat(9, 140px);
+  height: 160px;
+  border: 2px solid #029491;
+  border-radius: 0 10px 10px 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .summary {
+    padding: 0 14px 0 0;
+    width: 100%;
+  }
+
+  .summary h2 {
+    font-family: 'Ferry', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+  }
+
+  .summaryContainer {
+    min-height: 158px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 57px;
+    position: relative;
+  }
+
+  .nextButton {
+    position: absolute;
+    top: 35%;
+    right: -1%;
+  }
+  .prevButton {
+    position: absolute;
+    top: 35%;
+    left: -1%;
+  }
+
+  .summaryInfo {
+    display: grid;
+    grid-template-rows: 75px 75px;
+    grid-template-columns: none;
+    border: 2px solid #029491;
+    border-radius: 10px;
+    width: 300px;
+  }
+
+  .summaryInfoTitle {
+    background-color: #029491;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    border-radius: 7px 7px 0 0;
+    padding: 0 30px;
+    width: 270px;
+    height: 75px;
+  }
+
+  .summaryInfoTitle :nth-child(1) {
+    margin-right: 50px;
+  }
+
+  .summaryInfoTitle :nth-child(2) {
+    margin-right: 20px;
+  }
+
+  .summaryInfoBlock {
+    border-right: none;
+    display: flex;
+    padding: 0 40px 0 9px;
+  }
+
+  .summaryInfoBlock :nth-child(1) {
+    margin-right: 70px;
+  }
+
+  .summaryInfoBlock :nth-child(2) {
+    margin-right: 70px;
+  }
+
+  .summaryInfoBlock p {
+    margin-bottom: 23px;
+  }
+
+  .summaryContainer > .swiper {
+    width: 330px;
+    border: none;
+    box-shadow: 0px 0px 20px 0px #00000033;
+    border-radius: 0 0 10px 10px;
+    height: 75px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .summary {
+    padding: 0 14px 0 0;
+    width: 100%;
+  }
+
+  .summary h2 {
+    font-family: 'Ferry', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+  }
+
+  .summaryContainer {
+    min-height: 158px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 57px;
+    position: relative;
+  }
+
+  .nextButton {
+    position: absolute;
+    top: 35%;
+    right: -1%;
+  }
+  .prevButton {
+    position: absolute;
+    top: 35%;
+    left: -1%;
+  }
+
+  .summaryInfoTitle {
+    background-color: #029491;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    border-radius: 7px 7px 0 0;
+    padding: 0 30px;
+    width: 340px;
+    height: 75px;
+  }
+
+  .summaryInfoTitle :nth-child(1) {
+    margin-right: 50px;
+    margin-left: 25px;
+  }
+
+  .summaryInfoTitle :nth-child(2) {
+    margin-right: 30px;
+  }
+
+  .summaryInfoBlock {
+    border-right: none;
+    display: flex;
+    padding: 0 40px 0 9px;
+  }
+
+  .summaryInfoBlock :nth-child(1) {
+    margin-right: 70px;
+  }
+
+  .summaryInfoBlock :nth-child(2) {
+    margin-right: 70px;
+  }
+
+  .summaryInfoBlock p {
+    margin-bottom: 23px;
+  }
+
+  .summaryContainer > .swiper {
+    width: 400px !important;
+    border: none;
+    box-shadow: 0px 0px 20px 0px #00000033;
+    border-radius: 0 0 10px 10px;
+    height: 75px;
+  }
+}
